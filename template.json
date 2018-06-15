@@ -7,32 +7,6 @@
         }
     },
     "mappings": {
-        "messages": {
-            "properties": {
-                "query": {
-                    "properties": {
-                        "match_all": {
-                            "type": "object"
-                        }
-                    }
-                },
-                "aggs": {
-                    "properties": {
-                        "by_team": {
-                            "properties": {
-                                "terms": {
-                                    "properties": {
-                                        "field": {
-                                            "type": "text"
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
         "message": {
             "properties": {
                 "user": {
@@ -108,9 +82,6 @@
                         "author_icon": {
                             "type": "text"
                         },
-                        "footer_icon": {
-                            "type": "text"
-                        },
                         "pretext": {
                             "type": "text"
                         },
@@ -134,9 +105,6 @@
                             "type": "text"
                         },
                         "fallback": {
-                            "type": "text"
-                        },
-                        "footer": {
                             "type": "text"
                         },
                         "ts": {
